@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+
+    <!--ANIMATE  -->
+
+    <!-- ICON -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- FONTS -->
+    <link frel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar">
+      <a href="#home" class="navbar-logo">Siapa Aku Sebenarnya? ></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#quiz-container">Quiz</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HERO SECTION START -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Siapa Aku Sebenarnya?</h1>
+        <p>
+          "Pahami, eksplorasi, dan kenali siapa kamu sesungguhnya. Ambil langkah
+          pertamamu di sini."
+        </p>
+        <a href="#quiz-container" class="cta"
+          >Mulailah Petualangan Mencari Diri</a
+        >
+      </main>
+    </section>
+    <!-- HERO SECTION END -->
+    <!-- QUIZ SECTION START -->
+
+    <section class="quiz" id="quiz-container">
+      <h1>Kuis Identitas Diri</h1>
+
+      <!-- Container untuk pertanyaan -->
+      <div id="question-container">
+        <span id="question"></span>
+      </div>
+
+      <!-- Container untuk jawaban -->
+      <!-- Tombol jawaban -->
+      <div id="answer-buttons" class="btn-container">
+        <button class="btn answer-btn">Jawaban 1</button>
+        <button class="btn answer-btn">Jawaban 2</button>
+        <button class="btn answer-btn">Jawaban 3</button>
+        <button class="btn answer-btn">Jawaban 4</button>
+      </div>
+      <!-- Tombol untuk melanjutkan ke pertanyaan berikutnya -->
+      <button id="next-button" class="btn" style="display: none">
+        Berikutnya
+      </button>
+    </section>
+
+    <!-- Container untuk menampilkan hasil akhir dan refleksi -->
+    <section id="result-container" style="display: none">
+      <h2>Hasil Kuis Anda</h2>
+      <div id="result"></div>
+      <h3>Refleksi Berdasarkan Jawaban Anda:</h3>
+      <div id="reflection"></div>
+
+      <!-- Tombol untuk memulai ulang kuis -->
+      <button id="restart-button" class="btn">Mulai Lagi</button>
+    </section>
+
+    <!-- QUIZ SECTION END -->
+
+    <!-- RESULT SECTION START -->
+
+    <section id="result-container" style="display: none">
+      <h2>Hasil Kuis</h2>
+
+      <p id="result"></p>
+
+      <button id="restart-button" class="btn">Ulangi Kuis</button>
+    </section>
+
+    <!-- RESULT SECTION END -->
+
+    <!-- KEYPOINTN SECTION START -->
+    <section id="keypoint" class="keypoint">
+      <h2>
+        <i data-feather="chevron-left" class="feather-icons"></i> Memahami
+        Krisis Identitas><i
+          data-feather="chevron-right"
+          class="feather-icons"
+        ></i>
+      </h2>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="card-icon">
+            <i data-feather="alert-circle"></i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Mengenali Tanda-tanda</h4>
+            <p class="card-description">
+              Kebingungan akan nilai & tujuan hidup, perubahan drastis dalam
+              perilaku, dan kesulitan membuat keputusan adalah tanda umum Krisis
+              Identitas.
+            </p>
+            <ul class="card-list">
+              <li>
+                <i data-feather="chevron-right"></i>Perasaan kehilangan arah
+              </li>
+              <li>
+                <i data-feather="chevron-right"></i>Ketidakpastian akan peran
+                sosial
+              </li>
+              <li>
+                <i data-feather="chevron-right"></i>Questioning nilai-nilai
+                dasar
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i data-feather="life-buoy"></i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Dampak pada Kehidupan</h4>
+            <p class="card-description">
+              Krisis Identitas dapat mempengaruhi berbagai aspek kehidupan, dari
+              hubungan personal hingga performa profesional.
+            </p>
+            <ul class="card-list">
+              <li><i data-feather="chevron-right"></i>Produktivitas menurun</li>
+              <li><i data-feather="chevron-right"></i>Hubungan terganggu</li>
+              <li>
+                <i data-feather="chevron-right"></i>Kesehatan mental terpengaruh
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <i data-feather="heart"></i>
+          </div>
+          <div class="card-content">
+            <h4 class="card-title">Langkah Awal Penanganan</h4>
+            <p class="card-description">
+              Mengambil langkah proaktif dan mencari dukungan adalah kunci dalam
+              mengatasi Krisis Identitas.
+            </p>
+            <ul class="card-list">
+              <li>
+                <i data-feather="chevron-right"></i>Self-reflection teratur
+              </li>
+              <li>
+                <i data-feather="chevron-right"></i>Mencari professional help
+              </li>
+              <li>
+                <i data-feather="chevron-right"></i>Membangun support system
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- KEYPOINTN END -->
+
+    <!-- About Section Start-->
+    <section id="about" class="about">
+      <h2>
+        <i data-feather="chevron-left" class="feather-icons"></i
+        ><span>About</span> Us
+        <i data-feather="chevron-right" class="feather-icons"></i>
+      </h2>
+
+      <div class="content">
+        <div class="about-row">
+          <div class="about-content">
+            <h3>Kisah Di Balik Website Ini</h3>
+            <p>
+              Website ini lahir dari pengalaman pribadi dan pengamatan mendalam
+              tentang bagaimana banyak dari kita menghadapi momen-momen
+              kebingungan dalam hidup. Saat kita bertanya "Siapa aku
+              sebenarnya?", seringkali kita merasa sendirian dalam pencarian
+              jawaban.
+            </p>
+
+            <div class="about-mission">
+              <div class="mission-item">
+                <i data-feather="target" class="mission-icon"></i>
+                <h4>Misi Kami</h4>
+                <p>
+                  Menjadi tempat aman bagi siapapun yang sedang dalam perjalanan
+                  menemukan jati diri, memberikan dukungan, pemahaman, dan
+                  panduan yang mereka butuhkan.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-values">
+              <div class="value">
+                <i data-feather="heart"></i>
+                <p>Empati dalam setiap langkah perjalanan</p>
+              </div>
+              <div class="value">
+                <i data-feather="shield"></i>
+                <p>Ruang aman untuk eksplorasi diri</p>
+              </div>
+              <div class="value">
+                <i data-feather="users"></i>
+                <p>Komunitas yang mendukung</p>
+              </div>
+              <div class="value">
+                <i data-feather="compass"></i>
+                <p>Panduan yang terpercaya</p>
+              </div>
+            </div>
+
+            <div class="about-quote">
+              <i data-feather="quote" class="quote-icon"></i>
+              <p>
+                "Setiap orang memiliki perjalanan unik dalam menemukan jati
+                dirinya. Di sini, kita melangkah bersama."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End-->
+
+    <!-- CONTACT START -->
+    <section id="contact" class="contact">
+      <h2>Contact<span> Me</span></h2>
+
+      <p>
+        If you are experiencing an identity crisis or just want to share your
+        thoughts, feel free to reach out! I'm here to listen and help.
+      </p>
+
+      <form
+        class="contact-form"
+        action="mailto:wahyufadil1140@gmail.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Your Name:</label>
+
+        <input type="text" id="name" name="name" required class="form-input" />
+
+        <label for="email">Your Email:</label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="form-input"
+        />
+
+        <label for="message">Your Message:</label>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          class="form-textarea"
+        ></textarea>
+
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+      <div class="contact-social">
+        <div class="social">
+          <a href="https://instagram.com/fadill2049" target="_blank"
+            ><i data-feather="instagram" class="feather-icons-footer"></i
+          ></a>
+          <a href="https://github.com/WAHYUAKHMADFADILLAH" target="_blank"
+            ><i data-feather="github" class="feather-icons-footer"></i
+          ></a>
+          <a href="https://github.com/WAHYUAKHMADFADILLAH" target="_blank"
+            ><i data-feather="twitch" class="feather-icons-footer"></i
+          ></a>
+          <a href="https://github.com/WAHYUAKHMADFADILLAH" target="_blank"
+            ><i data-feather="facebook" class="feather-icons-footer"></i
+          ></a>
+          <a href="https://github.com/WAHYUAKHMADFADILLAH" target="_blank"
+            ><i data-feather="youtube" class="feather-icons-footer"></i
+          ></a>
+          <a href="mailto:wahyufadil1140@gmail.com"
+            ><i data-feather="mail" class="feather-icons-footer"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT END -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="credit">
+        <p>Designed & developed with 🤍, by Wahyu Akhmad Fadillah</p>
+        <p>&copy;2024 All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+    <!-- ICONS -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
